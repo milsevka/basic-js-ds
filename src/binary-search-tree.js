@@ -70,11 +70,9 @@ class BinarySearchTree {
       if (!node) {
         return null;
       }
-
       if (node.data === data) {
         return node;
       }
-
       if (data < node.data) {
         return search(node.left, data);
       } else if (data > node.data) {
